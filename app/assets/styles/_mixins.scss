@@ -1,0 +1,31 @@
+@mixin default-padding {
+	padding: 16px;
+
+	@media (min-width: 1280px) {
+		padding: 24px;
+	}
+
+	@media (min-width: 1920px) {
+		padding: 40px;
+	}
+}
+
+@mixin default-border-radius {
+	border-radius: 16px;
+
+	@media (min-width: 1280px) {
+		border-radius: 24px;
+	}
+}
+
+@mixin default-gap {
+	gap: 16px;
+
+	@media (min-width: 1280px) {
+		gap: 24px;
+	}
+
+	@media screen and (min-width: 1920px) {
+		gap: 32px;
+	}
+}
