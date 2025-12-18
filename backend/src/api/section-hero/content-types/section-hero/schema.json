@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_heroes",
+  "info": {
+    "singularName": "section-hero",
+    "pluralName": "section-heroes",
+    "displayName": "SectionHero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "component": "sections.services",
+      "repeatable": false
+    },
+    "poster": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

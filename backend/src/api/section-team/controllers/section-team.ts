@@ -1,0 +1,7 @@
+/**
+ * section-team controller
+ */
+
+import { factories } from '@strapi/strapi'
+
+export default factories.createCoreController('api::section-team.section-team');

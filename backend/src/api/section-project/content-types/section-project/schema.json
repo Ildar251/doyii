@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_projects",
+  "info": {
+    "singularName": "section-project",
+    "pluralName": "section-projects",
+    "displayName": "SectionProject"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "component": "sections.services",
+      "repeatable": false
+    }
+  }
+}

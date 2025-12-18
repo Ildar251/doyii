@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_reviews",
+  "info": {
+    "singularName": "section-review",
+    "pluralName": "section-reviews",
+    "displayName": "SectionReview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "component": "sections.services",
+      "repeatable": false
+    }
+  }
+}

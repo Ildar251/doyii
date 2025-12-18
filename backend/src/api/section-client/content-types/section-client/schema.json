@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_clients",
+  "info": {
+    "singularName": "section-client",
+    "pluralName": "section-clients",
+    "displayName": "SectionClient"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "component": "sections.services",
+      "repeatable": false
+    },
+    "clients": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects_tags",
+  "info": {
+    "singularName": "projects-tag",
+    "pluralName": "projects-tags",
+    "displayName": "projectsTags"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

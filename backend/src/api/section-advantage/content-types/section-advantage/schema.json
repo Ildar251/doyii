@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_advantages",
+  "info": {
+    "singularName": "section-advantage",
+    "pluralName": "section-advantages",
+    "displayName": "SectionAdvantage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "component": "sections.services",
+      "repeatable": false
+    },
+    "advantages_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advantage.advantage"
+    }
+  }
+}
