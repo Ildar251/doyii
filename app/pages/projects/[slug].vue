@@ -70,7 +70,7 @@ const result = computed(() => nuxtApp.$markdown(project.value?.result ?? ''))
 					</div>
 				</div>
 				<div class="section__image" v-motion-slide-visible-once-bottom>
-					<img :src="image ? strapiUrl + image : `/`" alt="" />
+					<img :src="image ? image : `/`" alt="" />
 				</div>
 			</div>
 		</section>

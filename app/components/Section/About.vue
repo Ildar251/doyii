@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
-
 const { open } = useRequestModal()
 
 const { find } = useStrapi()
@@ -34,7 +31,7 @@ const aboutButton = sectionData?.section?.button || {}
 					<div class="section__description">{{ aboutDescription }}</div>
 				</div>
 				<div class="about__image">
-					<img :src="strapiUrl + aboutImage" alt="" />
+					<img :src="aboutImage" alt="" />
 				</div>
 			</div>
 			<div class="about__blocks">

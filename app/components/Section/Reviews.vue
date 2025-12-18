@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import Image from 'primevue/image'
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
 
 import { Keyboard, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -94,10 +92,7 @@ const onBeforeInit = (swiper: any) => {
 						:key="p.id"
 						v-motion-slide-visible-once-bottom
 					>
-						<Image
-							:src="p.image?.url ? strapiUrl + p.image.url : `/`"
-							preview
-						/>
+						<Image :src="p.image?.url ? p.image.url : `/`" preview />
 					</SwiperSlide>
 				</Swiper>
 			</ClientOnly>

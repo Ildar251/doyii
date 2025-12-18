@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
 const { find } = useStrapi()
 
 const { data: sectionClients } = await useAsyncData('section-client', () =>
@@ -37,7 +35,7 @@ const clientsItems = sectionData?.clients || []
 			v-motion-slide-visible-once-bottom
 		>
 			<div v-for="slide in clientsItems" :key="slide.id" class="clients__item">
-				<img :src="strapiUrl + slide?.url" />
+				<img :src="slide?.url" />
 			</div>
 		</NuxtMarquee>
 	</section>

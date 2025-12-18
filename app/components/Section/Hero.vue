@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
-
 const { open } = useRequestModal()
 
 const { find } = useStrapi()
@@ -34,10 +31,10 @@ const heroVideoUrl = sectionData?.video?.url || ''
 				loop
 				playsinline
 				preload="metadata"
-				:poster="strapiUrl + heroPosterUrl"
+				:poster="heroPosterUrl"
 			>
-				<source :src="strapiUrl + heroVideoUrl" type="video/webm" />
-				<img :src="strapiUrl + heroPosterUrl" alt="Фоновая картинка" />
+				<source :src="heroVideoUrl" type="video/webm" />
+				<img :src="heroPosterUrl" alt="Фоновая картинка" />
 			</video>
 		</div>
 

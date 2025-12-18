@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import Dialog from 'primevue/dialog'
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
 const { find } = useStrapi()
 const { data: services } = await useAsyncData('services-page', () =>
 	find<Service>('services', {
@@ -49,7 +47,7 @@ const renderedContent = computed(() =>
 						:clickable="true"
 						v-for="(s, i) in services?.data"
 						:key="s.id"
-						:icon="s.icon?.url ? strapiUrl + s.icon.url : `/icons/${i + 1}.svg`"
+						:icon="s.icon?.url ? s.icon.url : `/icons/${i + 1}.svg`"
 						:title="s.title"
 						:content="s.shortText || ''"
 						variant="light"
@@ -75,7 +73,7 @@ const renderedContent = computed(() =>
 								<img
 									:src="
 										selectedService?.image?.url
-											? strapiUrl + selectedService?.image.url
+											? selectedService?.image.url
 											: `/`
 									"
 									alt=""

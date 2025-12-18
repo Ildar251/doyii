@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
-
 const props = defineProps<{
 	tags?: any
 	url?: string
@@ -25,7 +22,7 @@ const props = defineProps<{
 			:class="image_darker ? 'darker' : ''"
 			v-if="url"
 		>
-			<img :src="url ? strapiUrl + url : `/`" alt="" />
+			<img :src="url ? url : `/`" alt="" />
 		</div>
 		<div class="slide-card__content">
 			<h3 class="slide-card__title" v-if="title">

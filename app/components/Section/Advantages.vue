@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
-const strapiUrl = runtimeConfig.public.strapi.url
 const { find } = useStrapi()
 
 const { data: sectionAdvantages } = await useAsyncData(
@@ -36,7 +34,7 @@ console.log(advantagesItems)
 					v-motion-slide-visible-once-bottom
 					v-for="(s, i) in advantagesItems"
 					:key="s.id"
-					:icon="s.icon?.url ? strapiUrl + s.icon.url : `/icons/${i + 1}.svg`"
+					:icon="s.icon?.url ? s.icon.url : `/icons/${i + 1}.svg`"
 					:title="s.title"
 					:variant="'light'"
 				/>
