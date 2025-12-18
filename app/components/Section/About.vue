@@ -48,13 +48,13 @@ const aboutButton = sectionData?.section?.button || {}
 			</div>
 		</div>
 
-		<Button
+		<!-- <Button
 			v-motion-slide-visible-once-bottom
 			as="button"
 			@click="open"
 			class="btn btn--center btn--mt btn--accent"
 			>{{ aboutButton?.text || 'Оставить заявку' }}</Button
-		>
+		> -->
 	</section>
 </template>
 
