@@ -16,9 +16,11 @@ export default [
 	{
 		name: 'strapi::cors',
 		config: {
-			origin: ['http://localhost:3000', 'https://example.com'],
-			methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+			enabled: true,
+			origin: ['https://doyii-95jq-git-main-ilda251s-projects.vercel.app'],
+			headers: '*',
 			credentials: true,
+			methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
 		},
 	},
 	'strapi::poweredBy',
