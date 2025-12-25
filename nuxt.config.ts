@@ -40,11 +40,11 @@ export default defineNuxtConfig({
 
 	runtimeConfig: {
 		strapi: {
-			url: 'https://thankful-growth-bc0fa6992f.strapiapp.com',
+			url: 'https://reliable-activity-51328f3b1f.strapiapp.com',
 		},
 		public: {
 			strapi: {
-				url: 'https://thankful-growth-bc0fa6992f.strapiapp.com',
+				url: 'https://reliable-activity-51328f3b1f.strapiapp.com',
 			},
 		},
 	},
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
 	strapi: {
 		url:
 			process.env.STRAPI_URL ||
-			'https://thankful-growth-bc0fa6992f.strapiapp.com',
+			'https://reliable-activity-51328f3b1f.strapiapp.com',
 		token: process.env.STRAPI_TOKEN || undefined,
 		prefix: '/api',
 		admin: '/admin',
