@@ -19,7 +19,8 @@ export default [
 			enabled: true,
 			origin: [
 				'https://doyii-95jq-git-main-ilda251s-projects.vercel.app',
-				'http://doyii-95jq.vercel.app',
+				'https://doyii-95jq.vercel.app',
+				'https://doyii.vercel.app',
 			],
 			headers: '*',
 			credentials: true,
