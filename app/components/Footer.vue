@@ -13,7 +13,7 @@
 				<div class="footer__links">
 					<NuxtLink to="/cookie" class="link-underline">Куки</NuxtLink>
 					<NuxtLink to="/privacy-policy" class="link-underline"
-						>Политика конфиденциальности</NuxtLink
+						>Политика конфиденциальностии</NuxtLink
 					>
 				</div>
 
